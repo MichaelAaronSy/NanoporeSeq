@@ -1,0 +1,1486 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 4.18.0-477.27.1.el8_8.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/3.26.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/3.26.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b485c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b485c.dir/build.make CMakeFiles/cmTC_b485c.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle'
+        Building C object CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -c /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -version -o /scratch/local/22290301/ccKgXnEP.s
+        GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/8/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: ae5be8313d783fa2a04890136904f364
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o /scratch/local/22290301/ccKgXnEP.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-119.el8
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
+        Linking C executable cmTC_b485c
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b485c.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -o cmTC_b485c 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b485c' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/scratch/local/22290301/ccBgfzTB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b485c /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b485c' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle]
+        ignore line: []
+        ignore line: [Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b485c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b485c.dir/build.make CMakeFiles/cmTC_b485c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-lP4nle']
+        ignore line: [Building C object CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -c /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1 -quiet -v /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -version -o /scratch/local/22290301/ccKgXnEP.s]
+        ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: ae5be8313d783fa2a04890136904f364]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o /scratch/local/22290301/ccKgXnEP.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-119.el8]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking C executable cmTC_b485c]
+        ignore line: [/apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b485c.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -o cmTC_b485c ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_b485c' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/scratch/local/22290301/ccBgfzTB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_b485c /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/scratch/local/22290301/ccBgfzTB.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_b485c] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [CMakeFiles/cmTC_b485c.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ab025/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ab025.dir/build.make CMakeFiles/cmTC_ab025.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L'
+        Building CXX object CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -c /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/cc1plus -quiet -v -D_GNU_SOURCE /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/22290301/ccV3Ktix.s
+        GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward
+         /usr/lib/gcc/x86_64-redhat-linux/8/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)
+        	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18), GMP version 6.1.2, MPFR version 3.1.6-p2, MPC version 1.1.0, isl version isl-0.16.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 79803bf8d435b3cac4ad0a93cb59d496
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v --64 -o CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/22290301/ccV3Ktix.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-119.el8
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_ab025
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab025.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ab025 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+        Thread model: posix
+        gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ab025' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/scratch/local/22290301/ccHh9WNP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ab025 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ab025' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8] ==> [/usr/include/c++/8]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux] ==> [/usr/include/c++/8/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward] ==> [/usr/include/c++/8/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/8/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/8/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/8;/usr/include/c++/8/x86_64-redhat-linux;/usr/include/c++/8/backward;/usr/lib/gcc/x86_64-redhat-linux/8/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L]
+        ignore line: []
+        ignore line: [Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ab025/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ab025.dir/build.make CMakeFiles/cmTC_ab025.dir/build]
+        ignore line: [gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-od5b4L']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -c /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/cc1plus -quiet -v -D_GNU_SOURCE /apps/cmake/3.26.4/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -version -o /scratch/local/22290301/ccV3Ktix.s]
+        ignore line: [GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/8/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/../../../../include/c++/8/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/8/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GCC) version 8.5.0 20210514 (Red Hat 8.5.0-18) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 8.5.0 20210514 (Red Hat 8.5.0-18)  GMP version 6.1.2  MPFR version 3.1.6-p2  MPC version 1.1.0  isl version isl-0.16.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 79803bf8d435b3cac4ad0a93cb59d496]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o /scratch/local/22290301/ccV3Ktix.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-119.el8]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_ab025]
+        ignore line: [/apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab025.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -rdynamic CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ab025 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl --disable-libmpx --enable-offload-targets=nvptx-none --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 8.5.0 20210514 (Red Hat 8.5.0-18) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/8/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/8/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ab025' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/scratch/local/22290301/ccHh9WNP.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ab025 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/scratch/local/22290301/ccHh9WNP.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ab025] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..]
+          arg [CMakeFiles/cmTC_ab025.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8] ==> [/usr/lib/gcc/x86_64-redhat-linux/8]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/8/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/8/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/8;/usr/lib64;/lib64;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:107 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f0752/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0752.dir/build.make CMakeFiles/cmTC_f0752.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0'
+        Building C object CMakeFiles/cmTC_f0752.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f0752.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0/src.c
+        Linking C executable cmTC_f0752
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0752.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f0752.dir/src.c.o -o cmTC_f0752 
+        CMakeFiles/cmTC_f0752.dir/src.c.o: In function `main':
+        src.c:(.text+0x2d): undefined reference to `pthread_create'
+        src.c:(.text+0x39): undefined reference to `pthread_detach'
+        src.c:(.text+0x45): undefined reference to `pthread_cancel'
+        src.c:(.text+0x56): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_f0752.dir/build.make:99: cmTC_f0752] Error 1
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-T80Hh0'
+        gmake: *** [Makefile:127: cmTC_f0752/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "CMakeLists.txt:107 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_360d3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_360d3.dir/build.make CMakeFiles/cmTC_360d3.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7'
+        Building C object CMakeFiles/cmTC_360d3.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_360d3.dir/CheckFunctionExists.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7/CheckFunctionExists.c
+        Linking C executable cmTC_360d3
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_360d3.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_360d3.dir/CheckFunctionExists.c.o -o cmTC_360d3  -lpthreads 
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_360d3.dir/build.make:99: cmTC_360d3] Error 1
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xHtPy7'
+        gmake: *** [Makefile:127: cmTC_360d3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckLibraryExists.cmake:71 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "CMakeLists.txt:107 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8527/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e8527.dir/build.make CMakeFiles/cmTC_e8527.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA'
+        Building C object CMakeFiles/cmTC_e8527.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_e8527.dir/CheckFunctionExists.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA/CheckFunctionExists.c
+        Linking C executable cmTC_e8527
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8527.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_e8527.dir/CheckFunctionExists.c.o -o cmTC_e8527  -lpthread 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-XdPtHA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "sdsl-lite/CMakeLists.txt:44 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_STD=C__14__WALL__WEXTRA__DNDEBUG"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_STD=C__14__WALL__WEXTRA__DNDEBUG"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_379b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_379b2.dir/build.make CMakeFiles/cmTC_379b2.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4'
+        Building CXX object CMakeFiles/cmTC_379b2.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_STD=C__14__WALL__WEXTRA__DNDEBUG  -std=c++14 -Wall -Wextra -DNDEBUG -o CMakeFiles/cmTC_379b2.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4/src.cxx
+        Linking CXX executable cmTC_379b2
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_379b2.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG -rdynamic CMakeFiles/cmTC_379b2.dir/src.cxx.o -o cmTC_379b2 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KF2Ks4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "sdsl-lite/CMakeLists.txt:45 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d0e72/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d0e72.dir/build.make CMakeFiles/cmTC_d0e72.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw'
+        Building CXX object CMakeFiles/cmTC_d0e72.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_O3__FFAST_MATH__FUNROLL_LOOPS  -std=c++14 -Wall -Wextra -DNDEBUG -O3 -ffast-math -funroll-loops -o CMakeFiles/cmTC_d0e72.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw/src.cxx
+        Linking CXX executable cmTC_d0e72
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0e72.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG -O3 -ffast-math -funroll-loops -rdynamic CMakeFiles/cmTC_d0e72.dir/src.cxx.o -o cmTC_d0e72 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-Ov0QPw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "sdsl-lite/CMakeLists.txt:73 (try_compile)"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/external/sdsl-lite/build/CMakeFiles/CMakeTmp"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/external/sdsl-lite/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "MODE_TI"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/external/sdsl-lite/build/CMakeFiles/CMakeTmp
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_60fa3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_60fa3.dir/build.make CMakeFiles/cmTC_60fa3.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/external/sdsl-lite/build/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_60fa3.dir/check_mode_ti.cpp.o
+        /usr/bin/c++   -std=c++14 -Wall -Wextra -DNDEBUG  -o CMakeFiles/cmTC_60fa3.dir/check_mode_ti.cpp.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules/check_mode_ti.cpp
+        Linking CXX executable cmTC_60fa3
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60fa3.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG  -rdynamic CMakeFiles/cmTC_60fa3.dir/check_mode_ti.cpp.o -o cmTC_60fa3 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/external/sdsl-lite/build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "sdsl-lite/CMakeLists.txt:85 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_MSSE4.2__MARCH=NATIVE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_MSSE4.2__MARCH=NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9809f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9809f.dir/build.make CMakeFiles/cmTC_9809f.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL'
+        Building CXX object CMakeFiles/cmTC_9809f.dir/src.cxx.o
+        /usr/bin/c++   -std=c++14 -Wall -Wextra -DNDEBUG -msse4.2 -march=native   -DHAVE_GCC_MSSE4.2__MARCH=NATIVE -o CMakeFiles/cmTC_9809f.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_9809f
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9809f.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG -msse4.2 -march=native -rdynamic CMakeFiles/cmTC_9809f.dir/src.cxx.o -o cmTC_9809f 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-LgyPZL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "sdsl-lite/CMakeLists.txt:88 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_CLANG_MSSE4.2__MARCH=NATIVE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_CLANG_MSSE4.2__MARCH=NATIVE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e65e2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e65e2.dir/build.make CMakeFiles/cmTC_e65e2.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy'
+        Building CXX object CMakeFiles/cmTC_e65e2.dir/src.cxx.o
+        /usr/bin/c++   -std=c++14 -Wall -Wextra -DNDEBUG -msse4.2 -march=native   -DHAVE_CLANG_MSSE4.2__MARCH=NATIVE -o CMakeFiles/cmTC_e65e2.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_e65e2
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e65e2.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG -msse4.2 -march=native -rdynamic CMakeFiles/cmTC_e65e2.dir/src.cxx.o -o cmTC_e65e2 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-ivFUmy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/FindCxaDemangle.cmake:11 (CHECK_CXX_SOURCE_COMPILES)"
+      - "sdsl-lite/CMakeLists.txt:96 (include)"
+    checks:
+      - "Performing Test HAVE_CXA_DEMANGLE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43100/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_43100.dir/build.make CMakeFiles/cmTC_43100.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a'
+        Building CXX object CMakeFiles/cmTC_43100.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_CXA_DEMANGLE  -std=c++14 -Wall -Wextra -DNDEBUG  -o CMakeFiles/cmTC_43100.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a/src.cxx
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a/src.cxx: In function ‘int main()’:
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a/src.cxx:6:11: warning: unused variable ‘demangled’ [-Wunused-variable]
+             char *demangled = abi::__cxa_demangle( foo, 0, 0, &status );
+                   ^~~~~~~~~
+        Linking CXX executable cmTC_43100
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43100.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG  -rdynamic CMakeFiles/cmTC_43100.dir/src.cxx.o -o cmTC_43100 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-KG9w7a'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCXXSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/CMakeModules/AppendCompilerFlags.cmake:32 (check_cxx_source_compiles)"
+      - "sdsl-lite/CMakeLists.txt:100 (append_cxx_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_DHAVE_CXA_DEMANGLE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_DHAVE_CXA_DEMANGLE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4082f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4082f.dir/build.make CMakeFiles/cmTC_4082f.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq'
+        Building CXX object CMakeFiles/cmTC_4082f.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_GCC_DHAVE_CXA_DEMANGLE  -std=c++14 -Wall -Wextra -DNDEBUG -DHAVE_CXA_DEMANGLE -o CMakeFiles/cmTC_4082f.dir/src.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq/src.cxx
+        Linking CXX executable cmTC_4082f
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4082f.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG -DHAVE_CXA_DEMANGLE -rdynamic CMakeFiles/cmTC_4082f.dir/src.cxx.o -o cmTC_4082f 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-H3GJnq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake:14 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeLists.txt:74 (append_c_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_WALL"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_WALL"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fbca3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fbca3.dir/build.make CMakeFiles/cmTC_fbca3.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD'
+        Building C object CMakeFiles/cmTC_fbca3.dir/src.c.o
+        /usr/bin/cc -DHAVE_GCC_WALL  -Wall -o CMakeFiles/cmTC_fbca3.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD/src.c
+        Linking C executable cmTC_fbca3
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbca3.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -rdynamic CMakeFiles/cmTC_fbca3.dir/src.c.o -o cmTC_fbca3 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-U85UJD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/AppendCompilerFlags.cmake:14 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeLists.txt:75 (append_c_compiler_flags)"
+    checks:
+      - "Performing Test HAVE_GCC_FOMIT_FRAME_POINTER"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_GCC_FOMIT_FRAME_POINTER"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_098d1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_098d1.dir/build.make CMakeFiles/cmTC_098d1.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9'
+        Building C object CMakeFiles/cmTC_098d1.dir/src.c.o
+        /usr/bin/cc -DHAVE_GCC_FOMIT_FRAME_POINTER  -Wall -fomit-frame-pointer -o CMakeFiles/cmTC_098d1.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9/src.c
+        Linking C executable cmTC_098d1
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_098d1.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall -fomit-frame-pointer -rdynamic CMakeFiles/cmTC_098d1.dir/src.c.o -o cmTC_098d1 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-dTT7T9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:9 (check_include_file)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2a894/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2a894.dir/build.make CMakeFiles/cmTC_2a894.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS'
+        Building C object CMakeFiles/cmTC_2a894.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_2a894.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS/CheckIncludeFile.c
+        Linking C executable cmTC_2a894
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a894.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_2a894.dir/CheckIncludeFile.c.o -o cmTC_2a894 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-xDgISS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:10 (check_include_file)"
+    checks:
+      - "Looking for memory.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_MEMORY_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a0272/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a0272.dir/build.make CMakeFiles/cmTC_a0272.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8'
+        Building C object CMakeFiles/cmTC_a0272.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_a0272.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8/CheckIncludeFile.c
+        Linking C executable cmTC_a0272
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0272.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_a0272.dir/CheckIncludeFile.c.o -o cmTC_a0272 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wacyF8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:11 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c9c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c9c4.dir/build.make CMakeFiles/cmTC_0c9c4.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA'
+        Building C object CMakeFiles/cmTC_0c9c4.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_0c9c4.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA/CheckIncludeFile.c
+        Linking C executable cmTC_0c9c4
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c9c4.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_0c9c4.dir/CheckIncludeFile.c.o -o cmTC_0c9c4 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yLjQOA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:12 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bd823/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bd823.dir/build.make CMakeFiles/cmTC_bd823.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7'
+        Building C object CMakeFiles/cmTC_bd823.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_bd823.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7/CheckIncludeFile.c
+        Linking C executable cmTC_bd823
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd823.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_bd823.dir/CheckIncludeFile.c.o -o cmTC_bd823 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-sKk2k7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:13 (check_include_file)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6d888/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6d888.dir/build.make CMakeFiles/cmTC_6d888.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ'
+        Building C object CMakeFiles/cmTC_6d888.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_6d888.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ/CheckIncludeFile.c
+        Linking C executable cmTC_6d888
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d888.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_6d888.dir/CheckIncludeFile.c.o -o cmTC_6d888 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kdj2NQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:14 (check_include_file)"
+    checks:
+      - "Looking for string.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_STRING_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc702/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cc702.dir/build.make CMakeFiles/cmTC_cc702.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa'
+        Building C object CMakeFiles/cmTC_cc702.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_cc702.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa/CheckIncludeFile.c
+        Linking C executable cmTC_cc702
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc702.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_cc702.dir/CheckIncludeFile.c.o -o cmTC_cc702 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-kBWRLa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:15 (check_include_file)"
+    checks:
+      - "Looking for strings.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4692/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4692.dir/build.make CMakeFiles/cmTC_d4692.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW'
+        Building C object CMakeFiles/cmTC_d4692.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_d4692.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW/CheckIncludeFile.c
+        Linking C executable cmTC_d4692
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4692.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_d4692.dir/CheckIncludeFile.c.o -o cmTC_d4692 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-EA77pW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:16 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79913/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79913.dir/build.make CMakeFiles/cmTC_79913.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT'
+        Building C object CMakeFiles/cmTC_79913.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_79913.dir/CheckIncludeFile.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT/CheckIncludeFile.c
+        Linking C executable cmTC_79913
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79913.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_79913.dir/CheckIncludeFile.c.o -o cmTC_79913 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-RaJDVT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE_INLINE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_INLINE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_166d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_166d6.dir/build.make CMakeFiles/cmTC_166d6.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk'
+        Building C object CMakeFiles/cmTC_166d6.dir/src.c.o
+        /usr/bin/cc -DHAVE_INLINE  -Wall  -o CMakeFiles/cmTC_166d6.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk/src.c
+        Linking C executable cmTC_166d6
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_166d6.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_166d6.dir/src.c.o -o cmTC_166d6 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-MWytFk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE___INLINE"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ccd9e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ccd9e.dir/build.make CMakeFiles/cmTC_ccd9e.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw'
+        Building C object CMakeFiles/cmTC_ccd9e.dir/src.c.o
+        /usr/bin/cc -DHAVE___INLINE  -Wall  -o CMakeFiles/cmTC_ccd9e.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw/src.c
+        Linking C executable cmTC_ccd9e
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccd9e.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_ccd9e.dir/src.c.o -o cmTC_ccd9e 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-wFcFQw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___INLINE__"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE___INLINE__"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8aab2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8aab2.dir/build.make CMakeFiles/cmTC_8aab2.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8'
+        Building C object CMakeFiles/cmTC_8aab2.dir/src.c.o
+        /usr/bin/cc -DHAVE___INLINE__  -Wall  -o CMakeFiles/cmTC_8aab2.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8/src.c
+        Linking C executable cmTC_8aab2
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8aab2.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_8aab2.dir/src.c.o -o cmTC_8aab2 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-yb0Nr8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___DECLSPEC_DLLEXPORT_"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE___DECLSPEC_DLLEXPORT_"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2f89/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f2f89.dir/build.make CMakeFiles/cmTC_f2f89.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V'
+        Building C object CMakeFiles/cmTC_f2f89.dir/src.c.o
+        /usr/bin/cc -DHAVE___DECLSPEC_DLLEXPORT_  -Wall  -o CMakeFiles/cmTC_f2f89.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+         ^~~~~~~~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c: In function ‘__declspec’:
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+                                                        ^
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+                                                                       ^
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:1: warning: type of ‘dllexport’ defaults to ‘int’ [-Wimplicit-int]
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+         ^~~~~~~~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+                                    ^~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1: error: expected ‘{’ at end of input
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+         
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V/src.c:1:63: warning: control reaches end of non-void function [-Wreturn-type]
+         __declspec(dllexport) void func(); void func() { } int main() { func(); return 0; }
+                                                                       ^
+        gmake[1]: *** [CMakeFiles/cmTC_f2f89.dir/build.make:78: CMakeFiles/cmTC_f2f89.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-W3pk1V'
+        gmake: *** [Makefile:127: cmTC_f2f89/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/CMakeModules/CheckFunctionKeywords.cmake:9 (check_c_source_compiles)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:46 (check_function_keywords)"
+    checks:
+      - "Performing Test HAVE___DECLSPEC_DLLIMPORT_"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE___DECLSPEC_DLLIMPORT_"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f2fb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6f2fb.dir/build.make CMakeFiles/cmTC_6f2fb.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka'
+        Building C object CMakeFiles/cmTC_6f2fb.dir/src.c.o
+        /usr/bin/cc -DHAVE___DECLSPEC_DLLIMPORT_  -Wall  -o CMakeFiles/cmTC_6f2fb.dir/src.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+         ^~~~~~~~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c: In function ‘__declspec’:
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:48: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+                                                        ^
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:63: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘{’ token
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+                                                                       ^
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:1: warning: type of ‘dllimport’ defaults to ‘int’ [-Wimplicit-int]
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+         ^~~~~~~~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:28: error: declaration for parameter ‘func’ but no such parameter
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+                                    ^~~~
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1: error: expected ‘{’ at end of input
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+         
+        /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka/src.c:1:63: warning: control reaches end of non-void function [-Wreturn-type]
+         __declspec(dllimport) void func(); void func() { } int main() { func(); return 0; }
+                                                                       ^
+        gmake[1]: *** [CMakeFiles/cmTC_6f2fb.dir/build.make:78: CMakeFiles/cmTC_6f2fb.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-tFGEka'
+        gmake: *** [Makefile:127: cmTC_6f2fb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:60 (check_type_size)"
+    checks:
+      - "Check size of uint8_t"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_UINT8_T"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1be2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1be2.dir/build.make CMakeFiles/cmTC_f1be2.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP'
+        Building C object CMakeFiles/cmTC_f1be2.dir/UINT8_T.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_f1be2.dir/UINT8_T.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP/UINT8_T.c
+        Linking C executable cmTC_f1be2
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1be2.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_f1be2.dir/UINT8_T.c.o -o cmTC_f1be2 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-qArxpP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:72 (check_type_size)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_INT32_T"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79c63/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79c63.dir/build.make CMakeFiles/cmTC_79c63.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ'
+        Building C object CMakeFiles/cmTC_79c63.dir/INT32_T.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_79c63.dir/INT32_T.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ/INT32_T.c
+        Linking C executable cmTC_79c63
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79c63.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_79c63.dir/INT32_T.c.o -o cmTC_79c63 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2fyGaQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:75 (check_symbol_exists)"
+    checks:
+      - "Looking for PRId32"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_PRID32"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ebd08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ebd08.dir/build.make CMakeFiles/cmTC_ebd08.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR'
+        Building C object CMakeFiles/cmTC_ebd08.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_ebd08.dir/CheckSymbolExists.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR/CheckSymbolExists.c
+        Linking C executable cmTC_ebd08
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebd08.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_ebd08.dir/CheckSymbolExists.c.o -o cmTC_ebd08 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-nLyqeR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:104 (check_type_size)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_INT64_T"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4b34e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4b34e.dir/build.make CMakeFiles/cmTC_4b34e.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy'
+        Building C object CMakeFiles/cmTC_4b34e.dir/INT64_T.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_4b34e.dir/INT64_T.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy/INT64_T.c
+        Linking C executable cmTC_4b34e
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4b34e.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_4b34e.dir/INT64_T.c.o -o cmTC_4b34e 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-I4v1Wy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "sdsl-lite/external/libdivsufsort/include/CMakeLists.txt:107 (check_symbol_exists)"
+    checks:
+      - "Looking for PRId64"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -Wall"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/external/libdivsufsort/CMakeModules"
+    buildResult:
+      variable: "HAVE_PRID64"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f7e8d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f7e8d.dir/build.make CMakeFiles/cmTC_f7e8d.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo'
+        Building C object CMakeFiles/cmTC_f7e8d.dir/CheckSymbolExists.c.o
+        /usr/bin/cc   -Wall  -o CMakeFiles/cmTC_f7e8d.dir/CheckSymbolExists.c.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo/CheckSymbolExists.c
+        Linking C executable cmTC_f7e8d
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7e8d.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wall  -rdynamic CMakeFiles/cmTC_f7e8d.dir/CheckSymbolExists.c.o -o cmTC_f7e8d 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-frJkXo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/apps/cmake/3.26.4/share/cmake-3.26/Modules/CheckIncludeFileCXX.cmake:94 (try_compile)"
+      - "sdsl-lite/include/sdsl/CMakeLists.txt:6 (check_include_file_CXX)"
+    checks:
+      - "Looking for C++ include cstdio"
+    directories:
+      source: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL"
+      binary: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++14 -Wall -Wextra -DNDEBUG"
+      CMAKE_MODULE_PATH: "/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/sdsl-lite/CMakeModules"
+    buildResult:
+      variable: "HAVE_STDIO"
+      cached: true
+      stdout: |
+        Change Dir: /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL
+        
+        Run Build Command(s):/apps/cmake/3.26.4/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c7d8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c7d8.dir/build.make CMakeFiles/cmTC_0c7d8.dir/build
+        gmake[1]: Entering directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL'
+        Building CXX object CMakeFiles/cmTC_0c7d8.dir/CheckIncludeFile.cxx.o
+        /usr/bin/c++   -std=c++14 -Wall -Wextra -DNDEBUG  -o CMakeFiles/cmTC_0c7d8.dir/CheckIncludeFile.cxx.o -c /blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL/CheckIncludeFile.cxx
+        Linking CXX executable cmTC_0c7d8
+        /apps/cmake/3.26.4/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c7d8.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++14 -Wall -Wextra -DNDEBUG  -rdynamic CMakeFiles/cmTC_0c7d8.dir/CheckIncludeFile.cxx.o -o cmTC_0c7d8 
+        gmake[1]: Leaving directory '/blue/simone.marini/m.sy/conda/envs/NCBID/bin/SBWT_N/SBWT-kmer-counters/SBWT/build/CMakeFiles/CMakeScratch/TryCompile-2PHnWL'
+        
+      exitCode: 0
+...

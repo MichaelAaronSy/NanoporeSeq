@@ -1,0 +1,17 @@
+/*
+  This file is a part of KMC software distributed under GNU GPL 3 licence.
+  The homepage of the KMC project is http://sun.aei.polsl.pl/kmc
+  
+  Authors: Marek Kokot
+  
+  Version: 3.2.2
+  Date   : 2023-03-10
+*/
+
+#include "nc_utils.h"
+
+using namespace  kmc_tools;
+
+uchar CNumericConversions::digits[100000*5];
+int CNumericConversions::powOf10[30];
+CNumericConversions::_si CNumericConversions::_init;

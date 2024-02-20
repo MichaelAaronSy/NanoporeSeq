@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsbwt_static.a CMakeFiles/sbwt_static.dir/src/globals.cpp.o CMakeFiles/sbwt_static.dir/src/suffix_group_optimization.cpp.o CMakeFiles/sbwt_static.dir/src/EM_sort/Block.cpp.o CMakeFiles/sbwt_static.dir/src/EM_sort/EM_sort.cpp.o CMakeFiles/sbwt_static.dir/src/run_kmc.cpp.o CMakeFiles/sbwt_static.dir/src/kmc_construct_helper_classes.cpp.o
+/usr/bin/ranlib libsbwt_static.a
